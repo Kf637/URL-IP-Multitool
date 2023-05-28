@@ -185,7 +185,7 @@ def is_valid_url(url):
 
 def search_wayback_machine():
     clear_terminal()
-    print("""
+    print(f"""{Cyan}
 
 ██╗    ██╗ █████╗ ██╗   ██╗██████╗  █████╗  ██████╗██╗  ██╗    ███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███╗   ██╗███████╗    ██╗      ██████╗  ██████╗ ██╗  ██╗██╗   ██╗██████╗ 
 ██║    ██║██╔══██╗╚██╗ ██╔╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝    ████╗ ████║██╔══██╗██╔════╝██║  ██║██║████╗  ██║██╔════╝    ██║     ██╔═══██╗██╔═══██╗██║ ██╔╝██║   ██║██╔══██╗
@@ -195,7 +195,7 @@ def search_wayback_machine():
  ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝    ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     
                                                                                                                                                                               
                                                                                                                        
-    """)
+    {RESET}""")
     url = input("Enter the URL to search in Wayback Machine: ")
     if url == "":
         search_wayback_machine()
@@ -222,7 +222,7 @@ def search_wayback_machine():
 
 def IpTools():
     clear_terminal()
-    print("""
+    print(f"""{Cyan}
     ██╗██████╗     ████████╗ ██████╗  ██████╗ ██╗     ███████╗
     ██║██╔══██╗    ╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝
     ██║██████╔╝       ██║   ██║   ██║██║   ██║██║     ███████╗
@@ -230,7 +230,7 @@ def IpTools():
     ██║██║            ██║   ╚██████╔╝╚██████╔╝███████╗███████║
     ╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝
 
-    """)
+    {RESET}""")
     print('1. IP Info\n2. Get IP from URL\n3. Wayback Machine\n4. Back')
     choice = input("Enter your choice: ")
     if choice == "1":
@@ -272,7 +272,7 @@ post_requests = 0
 
 def main():
     clear_terminal()
-    print("""
+    print(f"""{Cyan}
 
 ██╗  ██╗███████╗ ██████╗ ██████╗ ███████╗    ██╗   ██╗██████╗ ██╗         ██╗██╗██████╗     ███╗   ███╗██╗   ██╗██╗  ████████╗██╗████████╗ ██████╗  ██████╗ ██╗     
 ██║ ██╔╝██╔════╝██╔════╝ ╚════██╗╚════██║    ██║   ██║██╔══██╗██║        ██╔╝██║██╔══██╗    ████╗ ████║██║   ██║██║  ╚══██╔══╝██║╚══██╔══╝██╔═══██╗██╔═══██╗██║     
@@ -281,7 +281,7 @@ def main():
 ██║  ██╗██║     ╚██████╔╝██████╔╝   ██║      ╚██████╔╝██║  ██║███████╗██╔╝   ██║██║         ██║ ╚═╝ ██║╚██████╔╝███████╗██║   ██║   ██║   ╚██████╔╝╚██████╔╝███████╗
 ╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═════╝    ╚═╝       ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝    ╚═╝╚═╝         ╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝
                                                                                                                                                                     
-""")
+{RESET}""")
     print("1. Help\n2. Attack DOS\n3. IP Tools\n4. Debug\n5. Exit")
     choice = input("Enter your choice: ")
     if choice == "1":
@@ -355,7 +355,7 @@ def main():
 def debug_menu():
      
         clear_terminal()
-        print("""
+        print(f"""{Cyan}
 
 
 ██████╗ ███████╗██████╗ ██╗   ██╗ ██████╗     ███╗   ███╗███████╗███╗   ██╗██╗   ██╗
@@ -365,7 +365,7 @@ def debug_menu():
 ██████╔╝███████╗██████╔╝╚██████╔╝╚██████╔╝    ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝
 ╚═════╝ ╚══════╝╚═════╝  ╚═════╝  ╚═════╝     ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
                                                                                                                                                                                                                                                         
-""")
+{RESET}""")
         print("1. Print Shell Color\n2. Ping IP/URL\n3. Exit")
         choice = input("Enter your choice: ")
         if choice == "1":
@@ -375,16 +375,17 @@ def debug_menu():
             debug_menu()
         elif choice == "2":
             clear_terminal()
-            ip_address = input("Enter IP or URL: ")
+            ip_address = input(f"Enter IP or URL: {Green}")
             if ip_address == "":
-                print(f'{Red}Input cannot be empty, going back...{RESET}')
-                time.sleep(3)
+                print(f'{Red}Input cannot be empty, try agian...{RESET}')
+                input('\nPlease press the "Enter".')
                 debug_menu()
+            print(f"{RESET}Please wait, attempting to ping {Green}{ip_address}{RESET}")
             result = ping_ip_address(ip_address)
             if result:
-                print(f"Successfully pinged {ip_address}")
+                print(f"\n{Green}Successfully pinged {ip_address}{RESET}\n")
             else:
-                print(f"Failed to ping {ip_address}")
+                print(f"\n{Red}Failed to ping {ip_address}{RESET}\n")
             input('\nPlease press the "Enter" key to navigate back.')
             debug_menu()
             
@@ -407,5 +408,22 @@ def ping_ip_address(ip_address):
             return False
     except subprocess.CalledProcessError:
         return False
+    
+def ping():
+    clear_terminal()
+    ip_address = input(f"Enter IP or URL: ")
+    if ip_address == "":
+        print("Input cannot be empty, try again...")
+        input('\nPlease press "Enter".')
+        debug_menu()
+    print(f"Please wait, attempting to ping {ip_address}")
+    result = ping_ip_address(ip_address)
+    if result:
+        print(f"\nSuccessfully pinged {ip_address}\n")
+    else:
+        print(f"\nFailed to ping {ip_address}\n")
+    input('\nPlease press "Enter" key to navigate back.')
+    debug_menu()
+        
     
 main()
